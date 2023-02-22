@@ -1,0 +1,33 @@
+{% include 'empleados/1_cabecera.html' %}
+<div class="container">
+    <div class="item">
+        <h5>FUNCION - LISTAR REGISTRO DE CUENTAS</h5><br><br>
+    </div>
+</div>
+<br><hr>
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>Id</th>
+            <th>Tipo</th>
+            <th>Cuenta</th>
+            <th class="text-end">Saldo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for empleado in empleados %}
+        <tr>
+            <td>{{empleado[0]}}</td>
+            <td>{{empleado[1]}}</td>
+            <td>{{empleado[2]}}</td>
+            <td class="text-end">{{empleado[3]}}</td>
+            <td><a class="btn btn-warning"  href="/f_editar/{{empleado[0]}}">Editar</a> |
+                <a class="btn btn-danger" href="/f_mostrar_eliminar/{{empleado[0]}}">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% include 'empleados/2_pie.html' %}

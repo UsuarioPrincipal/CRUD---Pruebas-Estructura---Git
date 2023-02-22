@@ -1,0 +1,24 @@
+.grid-container {
+    /*Convierte el contenedor en una grilla */
+    display: grid;   /* display: inline-grid; */
+
+    /*Ancho de los elementos de cada columna*/
+    grid-template-columns:  40px 20% 1fr 1fr  auto;
+
+    /*Espacios entre los elementos "hijos"*/
+    gap: 10px;
+
+    /*Coloco un espacio alrededor del contenido
+    de los elementos "hijos"*/
+    padding: 10px;
+    background-color: coral;
+}
+
+.grid-item {
+    background-color: burlywood; /*Color de fondo de los hijos */
+    padding:10px;
+    border: 2px solid black;     /*Borde de los elementos hijos */
+    text-align: center;            /*Contenido de los hijos centrado en x */
+}
+
+h1 {color: blue;}

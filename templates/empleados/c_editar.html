@@ -1,0 +1,27 @@
+{% include 'empleados/1_cabecera.html' %}
+
+
+    <div class="container">
+        <div class="item">
+            <h5>FUNCION--EDITAR DATOS DE UN EMPLEADO</h5><br><br>
+        </div>
+    </div>
+    <br><hr>
+<form method="post" action="/actualizar" enctype="multipart/form-data">
+    Identificación Cta.->
+    <input type="text" value="{{ empleados[0][0] }}" name="txtId" id="txtId" readonly><br><br>
+
+    Modificar Tipo-->
+    <input type="text" value="{{ empleados[0][1] }}" name="txtTipo" id="txtTipo"><br><br>
+
+    Modificar Cuenta--->
+    <input type="text" value="{{ empleados[0][2] }}" name="txtCuenta" id="txtCuenta"><br><br>
+
+    Modificar Saldo------>    
+    <input type="number" value="{{ empleados[0][3] }}" name="numSaldo" id="numSaldo"><br><br>
+    Confirmar Cambios->
+    <input type="submit" value="Guardar">
+
+</form>
+
+{% include 'empleados/2_pie.html' %}

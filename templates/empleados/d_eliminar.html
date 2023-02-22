@@ -1,0 +1,24 @@
+{% include 'empleados/1_cabecera.html' %}
+
+<form method="post" action="/f_eliminar/{{empleados[0][0]}}" enctype="multipart/form-data">
+
+    <h5>ELIMINAR DATOS DE UN EMPLEADO</h5><br>
+
+    Identificación Cuenta->
+    <input type="text" value="{{ empleados[0][0] }}" name="txtId" id="txtId" readonly><br><br>
+
+    Tipo------------->
+    <input type="text" value="{{ empleados[0][1] }}" name="txtTipo" id="txtTipo" readonly><br><br>
+
+    Cuenta-------------->
+    <input type="text" value="{{ empleados[0][2] }}" name="txtCuenta" id="txtCuenta" readonly><br><br>
+
+    Saldo---------------->    
+    <input type="text" value="{{ empleados[0][3] }}" name="txtSaldo" id="txtSaldo" readonly><br><br>
+    <br><br>
+    
+
+</form>
+Confirmar BORRAR--> <a class="btn btn-danger" href="/f_eliminar/{{empleados[0][0]}}">Eliminar</a>
+
+{% include 'empleados/2_pie.html' %}
