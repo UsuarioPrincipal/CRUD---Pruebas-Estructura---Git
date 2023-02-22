@@ -165,6 +165,8 @@ def actualizar():
 #ESTO FUE LO AGREGADO EN LA RAMA PRUEBA
 #--------------------------------------------------------------------
 
+# ESTO FUE AGREGADO EN LA RAMA MASTER DE GIT
+
 
 # Estas líneas de código las requiere python para que 
 # se pueda empezar a trabajar con la aplicación
