@@ -165,6 +165,7 @@ def actualizar():
 #ESTO FUE LO AGREGADO EN LA RAMA PRUEBA
 #--------------------------------------------------------------------
 
+# ACA AGREGO ALGO EN LA RAMA MASTER LOCAL
 
 # Estas líneas de código las requiere python para que 
 # se pueda empezar a trabajar con la aplicación
