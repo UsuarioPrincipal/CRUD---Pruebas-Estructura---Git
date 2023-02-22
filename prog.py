@@ -161,6 +161,11 @@ def actualizar():
 
 #--------------------------------------------------------------------
 
+#--------------------------------------------------------------------
+#ESTO FUE LO AGREGADO EN LA RAMA PRUEBA
+#--------------------------------------------------------------------
+
+
 # Estas líneas de código las requiere python para que 
 # se pueda empezar a trabajar con la aplicación
 if __name__=='__main__':
