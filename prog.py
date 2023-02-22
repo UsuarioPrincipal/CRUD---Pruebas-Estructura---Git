@@ -166,6 +166,8 @@ def actualizar():
 #--------------------------------------------------------------------
 
 # ACA AGREGO ALGO EN LA RAMA MASTER LOCAL
+# ESTO FUE AGREGADO EN LA RAMA MASTER DE GIT
+
 
 # Estas líneas de código las requiere python para que 
 # se pueda empezar a trabajar con la aplicación
